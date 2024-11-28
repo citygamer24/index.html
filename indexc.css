@@ -60,3 +60,26 @@
   }
 
   
+/* Estilos personalizados */
+
+/* Fondo y color de texto para la barra de navegación */
+.navbar {
+  background-color: #f8f9fa;
+}
+
+/* Contenido de las secciones */
+.content {
+  display: none; /* Ocultar contenido por defecto */
+}
+
+/* Estilo para las secciones activas */
+.content.active {
+  display: block; /* Mostrar contenido cuando es activo */
+}
+
+/* Opcional: Estilos para los elementos del menú */
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff !important;
+}
+  

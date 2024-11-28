@@ -10,7 +10,7 @@
     
 </head>
 
-<body style="background-color: #000000; font-family: Arial, sans-serif;">
+<body style=" font-family: Arial, sans-serif;">
     <div id="intro-screen">
         <h1>¡Bienvenido a Mi Página!</h1>
         <br>
@@ -44,30 +44,60 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-              <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav" style="height: 10%;">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">regalos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">fecha</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">ERROR</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+
+
+              <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" onclick="changeContent('home')">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="nav-home" class="nav-link active" href="javascript:void(0)" onclick="changeContent('home')">Home</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-regalos" class="nav-link" href="javascript:void(0)" onclick="changeContent('regalos')">Regalos</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-fecha" class="nav-link" href="javascript:void(0)" onclick="changeContent('fecha')">Fecha</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-error" class="nav-link disabled" href="javascript:void(0)">ERROR</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Secciones de contenido -->
+  <div class="container mt-5">
+    <!-- Página principal -->
+    <div id="home" class="content">
+      <h3>Bienvenido a la Página Principal</h3>
+      <p>Aquí puedes encontrar información general sobre nuestra página.</p>
+    </div>
+
+    <!-- Sección Regalos -->
+    <div id="regalos" class="content" style="display:none;">
+      <h3>Regalos</h3>
+      <p>Esta sección trata sobre opciones para regalar en diferentes ocasiones.</p>
+    </div>
+
+    <!-- Sección Fecha -->
+    <div id="fecha" class="content" style="display:none;">
+      <h3>Fecha</h3>
+      <p>En esta sección mostramos información sobre eventos programados o fechas importantes.</p>
+    </div>
+
+    <!-- Sección ERROR -->
+    <div id="error" class="content" style="display:none;">
+      <h3>Error</h3>
+      <p>Sección deshabilitada. Esta opción no está disponible.</p>
+    </div>
+  </div>
                 <p>Footer</p>
                 <!--footer-->
                 <footer class="text-center text-lg-start bg-body-tertiary text-muted">
@@ -75,7 +105,7 @@
                     <section class="d-flex justify-content-center justify-content-ig-between p-4 border-bottom">
                         <!--left-->
                         <div class="me-5 d-none d-lg-block">
-                            <span>Get connect width us on social networks</span>
+                            <span>esta es la pagina que estare haciendo en el pasar de los dias para poner aprueba mis habilidades y conocimientos de la escuela</span>
                         </div>
                         <!--left-->
                 
