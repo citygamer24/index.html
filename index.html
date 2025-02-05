@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgers el Techear - Menú Digital</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+</head>
+<body>
+    <!-- Header con logo y navegación -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i data-lucide="beef"></i>
+                    <span>Burgers el Techear</span>
+                </div>
+                
+                <nav>
+                    <a href="#menu"><i data-lucide="utensils"></i>Menú</a>
+                    <a href="#promociones"><i data-lucide="badge-percent"></i>Promociones</a>
+                    <a href="#ubicacion"><i data-lucide="map-pin"></i>Ubicación</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero con mensaje principal -->
+    <main class="hero container">
+        <h1>Las Mejores Hamburguesas</h1>
+        <p>¡Ordena ahora por WhatsApp!</p>
+        <a href="https://wa.me/3411602896" class="cta-button" target="_blank">
+            Hacer Pedido
+            <i data-lucide="message-circle"></i>
+        </a>
+    </main>
+
+    <!-- Menú con carruseles individuales -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Nuestro Menú</h2>
+            
+            <!-- Hamburguesa Clásica -->
+            <div class="burger-showcase">
+                <h3>Hamburguesa Clásica</h3>
+                <div class="burger-carousel">
+                    <button class="carousel-button prev" data-carousel="clasica">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <div class="carousel-container" id="carousel-clasica">
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=600&fit=crop" alt="Hamburguesa Clásica">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800&h=600&fit=crop" alt="Hamburguesa Clásica Ingredientes">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?w=800&h=600&fit=crop" alt="Hamburguesa Clásica con Papas">
+                        </div>
+                    </div>
+                    <button class="carousel-button next" data-carousel="clasica">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+                <div class="burger-info">
+                    <div class="burger-description">
+                        <p>La hamburguesa que lo empezó todo. Nuestra Clásica está hecha con:</p>
+                        <ul>
+                            <li>Carne 100% de res (180g)</li>
+                            <li>Queso cheddar fundido</li>
+                            <li>Lechuga fresca y crujiente</li>
+                            <li>Tomate jugoso</li>
+                            <li>Cebolla caramelizada</li>
+                            <li>Pan artesanal tostado</li>
+                        </ul>
+                    </div>
+                    <div class="burger-price">
+                        <span>$89.00</span>
+                        <a href="https://wa.me/3411602896?text=Hola,%20quiero%20ordenar%20una%20Hamburguesa%20Clásica" class="order-button" target="_blank">
+                            Ordenar
+                            <i data-lucide="shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hamburguesa BBQ -->
+            <div class="burger-showcase">
+                <h3>Hamburguesa BBQ</h3>
+                <div class="burger-carousel">
+                    <button class="carousel-button prev" data-carousel="bbq">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <div class="carousel-container" id="carousel-bbq">
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=800&h=600&fit=crop" alt="Hamburguesa BBQ">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1596662951482-0c4ba74a6df6?w=800&h=600&fit=crop" alt="Hamburguesa BBQ Ingredientes">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&h=600&fit=crop" alt="Hamburguesa BBQ con Aros de Cebolla">
+                        </div>
+                    </div>
+                    <button class="carousel-button next" data-carousel="bbq">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+                <div class="burger-info">
+                    <div class="burger-description">
+                        <p>Para los amantes del sabor ahumado, nuestra BBQ incluye:</p>
+                        <ul>
+                            <li>Carne de res premium (180g)</li>
+                            <li>Salsa BBQ casera</li>
+                            <li>Tocino crujiente</li>
+                            <li>Queso gouda ahumado</li>
+                            <li>Aros de cebolla</li>
+                            <li>Pan brioche tostado</li>
+                        </ul>
+                    </div>
+                    <div class="burger-price">
+                        <span>$129.00</span>
+                        <a href="https://wa.me/3411602896?text=Hola,%20quiero%20ordenar%20una%20Hamburguesa%20BBQ" class="order-button" target="_blank">
+                            Ordenar
+                            <i data-lucide="shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hamburguesa Mexicana -->
+            <div class="burger-showcase">
+                <h3>Hamburguesa Mexicana</h3>
+                <div class="burger-carousel">
+                    <button class="carousel-button prev" data-carousel="mexicana">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <div class="carousel-container" id="carousel-mexicana">
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=800&h=600&fit=crop" alt="Hamburguesa Mexicana">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=800&h=600&fit=crop" alt="Hamburguesa Mexicana Ingredientes">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1551615593-ef5fe247e8f7?w=800&h=600&fit=crop" alt="Hamburguesa Mexicana con Guacamole">
+                        </div>
+                    </div>
+                    <button class="carousel-button next" data-carousel="mexicana">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+                <div class="burger-info">
+                    <div class="burger-description">
+                        <p>El sabor de México en una hamburguesa, incluye:</p>
+                        <ul>
+                            <li>Carne de res sazonada (180g)</li>
+                            <li>Guacamole fresco</li>
+                            <li>Jalapeños asados</li>
+                            <li>Queso Oaxaca</li>
+                            <li>Pico de gallo</li>
+                            <li>Pan telera tostado</li>
+                        </ul>
+                    </div>
+                    <div class="burger-price">
+                        <span>$119.00</span>
+                        <a href="https://wa.me/3411602896?text=Hola,%20quiero%20ordenar%20una%20Hamburguesa%20Mexicana" class="order-button" target="_blank">
+                            Ordenar
+                            <i data-lucide="shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Promociones -->
+    <section id="promociones" class="promotions-section container">
+        <h2>Promociones Especiales</h2>
+        <div class="promotions-grid">
+            <!-- Promoción 1 -->
+            <div class="promotion-card">
+                <div class="promotion-image">
+                    <img src="https://images.unsplash.com/photo-1610614819513-58e34989848b?w=500&h=300&fit=crop" alt="Combo Familiar">
+                    <div class="promotion-badge">¡AHORRA 30%!</div>
+                </div>
+                <div class="promotion-details">
+                    <h3>Combo Familiar</h3>
+                    <p>4 Hamburguesas + 4 Refrescos + 2 Papas Grandes</p>
+                    <div class="promotion-price">
+                        <span class="original-price">$499.00</span>
+                        <span class="discount-price">$349.00</span>
+                    </div>
+                    <a href="https://wa.me/3411602896?text=Hola,%20quiero%20ordenar%20el%20Combo%20Familiar" class="order-button" target="_blank">
+                        Ordenar Promoción
+                        <i data-lucide="shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Promoción 2 -->
+            <div class="promotion-card">
+                <div class="promotion-image">
+                    <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=500&h=300&fit=crop" alt="Combo Duo">
+                    <div class="promotion-badge">¡2x1!</div>
+                </div>
+                <div class="promotion-details">
+                    <h3>Martes de 2x1</h3>
+                    <p>Dos hamburguesas clásicas al precio de una</p>
+                    <div class="promotion-price">
+                        <span class="original-price">$178.00</span>
+                        <span class="discount-price">$89.00</span>
+                    </div>
+                    <a href="https://wa.me/3411602896?text=Hola,%20quiero%20ordenar%20el%20Combo%20Duo%202x1" class="order-button" target="_blank">
+                        Ordenar Promoción
+                        <i data-lucide="shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Ubicación -->
+    <section id="ubicacion" class="location-section">
+        <div class="container">
+            <h2>Nuestra Ubicación</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <p><i data-lucide="map-pin"></i> Av. Universidad 123, Centro</p>
+                    <p><i data-lucide="clock"></i> Lunes a Domingo: 12:00 - 22:00</p>
+                    <p><i data-lucide="phone"></i> Tel: (123) 456-7890</p>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.761237045603!2d-99.16869612390697!3d19.419994641977636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1709824431309!5m2!1ses-419!2smx"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
